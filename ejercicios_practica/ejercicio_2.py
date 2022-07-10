@@ -18,19 +18,43 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 # Compare cual de las dos palabras es mayor (alfabéticamente)
 # Imprima en pantalla según corresponda
+if texto_1 > texto_2:
+    print('{} es mayor que {}'.format(texto_1, texto_2))
+elif texto_1 < texto_2:
+    print('{} es mayor que {}'.format(texto_2, texto_1))
+else:
+    print("Los textos ingresados ", texto_1,  "y", texto_2,  "son iguales.")
 
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
 # Imprima en pantalla según corresponda
+if len(texto_1) > len(texto_2):
+    print('{} es mayor que {}'.format(texto_1, texto_2))
+elif len(texto_1) < len(texto_2):
+    print('{} es mayor que {}'.format(texto_2, texto_1))
+else:
+    print("Los textos ingresados tienen: ", len(texto_1),  "y", len(texto_2),  "igualdad de letras.")
 
 # Verifique si la primera letra de la primera palabra
 # es mayor a la primera letra de la segunda palabra
 # Imprima en pantalla según corresponda
+if len(texto_1[0]) > len(texto_2[0]):
+    print("la primera letra es mayor a la primer letra de la segunda palabra", len(texto_1[0]))
+else:
+    print("La primera letra de la: primer palabra: {} no es mayor a la primer letra de la segunda palabra: {}.".format(len(texto_1[0]),len(texto_2[0])))
 
 copia_texto_1 = texto_1  # Copia de la variable texto_1
 
 # Verifique que copia_texto_1 es igual a texto_1
 # Imprima en pantalla según corresponda
+if copia_texto_1 == texto_1:
+    print("Los textos son iguales.")
+else:
+    print("Los textos no son iguales.")
 
 # Verifique que copia_texto_1 es distinta a texto_2
 # Imprima en pantalla según corresponda
+if copia_texto_1 != texto_2:
+    print("El texto {} es distinto de {} ".format(copia_texto_1,texto_2))
+else:
+    print("Los textos {} y {} son iguales.".format(copia_texto_1,texto_2))
