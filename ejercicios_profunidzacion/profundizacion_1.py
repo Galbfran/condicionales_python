@@ -22,3 +22,20 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+def solicite_valores():
+    valor_1 = int(input("Ingrese un valor: \n"))
+    valor_2 = int(input("Ingrese un valor: \n"))
+    resultado = valor_1 - valor_2
+    return resultado 
+
+def indicador(resultado):
+    if resultado >= 0 :
+        print("El numero es positivo.")
+    elif resultado <= 0:
+        print("El numero es negativo.")
+    else:
+        print("El numero es cero.")
+
+if __name__ == '__main__':
+    resultado = int
+    indicador(solicite_valores())

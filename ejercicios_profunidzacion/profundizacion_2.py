@@ -23,3 +23,17 @@ Para cada caso imprimir el resultado en pantalla.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+def par_impar():
+    for numero in range(cantidad_numeros):
+        numero = int(input("Ingrese numero."))
+        if (numero%2) == 0:
+            print("El numero {} es par.".format(numero))
+        else:
+            print("El numero {} es impar.".format(numero))
+
+
+if __name__ == '__main__':
+    cantidad_numeros = int(input("Ingrese la cantidad de numeros a consultar.\n"))
+
+    par_impar()
